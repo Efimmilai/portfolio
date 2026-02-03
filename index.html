@@ -7,222 +7,72 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="grain" aria-hidden="true"></div>
-    <header class="hero">
-      <nav class="nav">
-        <div class="logo">NS</div>
-        <div class="nav-links">
-          <a href="#projects">Проекты</a>
-          <a href="#about">Обо мне</a>
-          <a href="#reviews">Отзывы</a>
-          <a href="#contact">Контакты</a>
+    <div class="bg-grid" aria-hidden="true"></div>
+    <div class="page">
+      <header class="hero">
+        <div class="hero-avatar">
+          <div class="avatar"></div>
+          <div class="avatar-tags">
+            <span class="tag round">T</span>
+            <span class="tag round">UX</span>
+          </div>
         </div>
-        <a class="nav-cta" href="#contact">Написать</a>
-      </nav>
+        <p class="hero-eyebrow">Привет, я Никита!</p>
+        <h1>Продуктовый дизайнер и ментор</h1>
+        <p class="hero-lead">
+          Разрабатываю цифровые продукты от идеи до запуска, опираясь на
+          стратегию, бизнес-цели и потребности пользователей. Сейчас — в банке
+          Точка. Параллельно менторю дизайнеров в Duo Sapiens.
+        </p>
+        <div class="hero-actions">
+          <a class="pill" href="#">CV ↗</a>
+          <a class="pill" href="https://t.me/" target="_blank" rel="noreferrer">Telegram ↗</a>
+          <a class="pill" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+        </div>
+      </header>
 
-      <div class="hero-content">
-        <div class="hero-text">
-          <span class="eyebrow">Привет, я Никита</span>
-          <h1>
-            Продуктовый дизайнер и ментор. Делаю продукты, которые растут вместе
-            с бизнесом.
-          </h1>
-          <p class="lead">
-            От исследования и стратегии до UI и запуска. Сейчас — в финтехе,
-            параллельно менторю дизайнеров и помогаю командам быстро проверять
-            гипотезы.
-          </p>
-          <div class="hero-actions">
-            <a class="btn primary" href="#projects">Смотреть проекты</a>
-            <a class="btn outline" href="#contact">Связаться</a>
-          </div>
-          <div class="hero-links">
-            <a href="https://t.me/" target="_blank" rel="noreferrer">Telegram</a>
-            <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
-            <a href="#">CV</a>
-          </div>
-        </div>
-        <div class="hero-visual">
-          <div class="portrait">
-            <div class="portrait-ring"></div>
-            <div class="portrait-inner">
-              <span>portfolio</span>
-            </div>
-          </div>
-          <div class="hero-stats">
-            <div>
-              <h3>8+</h3>
-              <p>запусков продуктов в B2B и B2C</p>
-            </div>
-            <div>
-              <h3>4</h3>
-              <p>страны, где работали мои решения</p>
-            </div>
-            <div>
-              <h3>30%</h3>
-              <p>средний рост метрик после редизайна</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <main>
-      <section id="projects" class="section">
-        <div class="section-head">
+      <main>
+        <section id="projects" class="section">
           <h2>Мои проекты</h2>
-          <p>
-            Финтех, proptech, студийные проекты и сервисы для международных
-            команд. Ниже — кейсы, которые люблю пересказывать на интервью.
-          </p>
-        </div>
-        <div class="project-grid">
-          <article class="project-card">
-            <div class="project-tag">Россия · Финтех</div>
-            <h3>Кредитные карты для МТС Банка</h3>
-            <p>
-              Перезапустили onboarding и каталог. Упростили сценарии и повысили
-              конверсию в заявку.
-            </p>
-            <span class="project-meta">Роль: lead product design · +18%</span>
-          </article>
-          <article class="project-card">
-            <div class="project-tag">США · Казахстан · PropTech</div>
-            <h3>SmplDo — сервис эксплуатации объектов</h3>
-            <p>
-              MVP для инженеров и управляющих. Объединили процессы и сделали
-              единый поток задач.
-            </p>
-            <span class="project-meta">Роль: product design + research</span>
-          </article>
-          <article class="project-card">
-            <div class="project-tag">Германия · Студия</div>
-            <h3>RED Machine Studio</h3>
-            <p>
-              Экосистема UX/UI для медтех и фан‑тех клиентов. Перешли на токены и
-              ускорили релизы.
-            </p>
-            <span class="project-meta">Роль: design system owner</span>
-          </article>
-          <article class="project-card">
-            <div class="project-tag">Испания · Relocation</div>
-            <h3>Totamtotut</h3>
-            <p>
-              Брендинг и сервис‑дизайн для релокации в Испанию и Португалию.
-              Пересобрали путь клиента.
-            </p>
-            <span class="project-meta">Роль: product & brand design</span>
-          </article>
-        </div>
-      </section>
+          <div class="project-grid">
+            <article class="project-card featured">
+              <div class="project-head">
+                <span class="badge">Россия</span>
+                <h3>МТС Банк</h3>
+                <p>Продуктовый дизайн в стриме кредитных карт.</p>
+              </div>
+              <div class="project-preview card-gradient"></div>
+              <button class="arrow" aria-label="Открыть">↗</button>
+            </article>
 
-      <section class="section manifesto">
-        <div class="manifesto-card">
-          <p>
-            “Каждая команда — это новая глава. Я люблю находить короткий путь от
-            идеи к результату, сохраняя эстетичность и ясность.”
-          </p>
-          <div class="manifesto-steps">
-            <div>
-              <h4>Стратегия</h4>
-              <p>Исследования, JTBD, продуктовые метрики.</p>
-            </div>
-            <div>
-              <h4>Дизайн</h4>
-              <p>UX‑архитектура, прототипы, дизайн‑система.</p>
-            </div>
-            <div>
-              <h4>Запуск</h4>
-              <p>Синхронизация с продуктом и разработкой.</p>
-            </div>
-          </div>
-        </div>
-      </section>
+            <article class="project-card">
+              <div class="project-head">
+                <span class="badge">США · Казахстан</span>
+                <h3>Стартап SmplDo</h3>
+                <p>MVP приложения для автоматизации задач.</p>
+              </div>
+              <div class="project-preview dark-gradient"></div>
+              <button class="arrow" aria-label="Открыть">↗</button>
+            </article>
 
-      <section id="about" class="section about">
-        <div class="section-head">
-          <h2>Обо мне</h2>
-          <p>
-            В дизайне — 3+ года. Работал в стартапах и корпорациях. Фокус — системный
-            подход и создание решений, которые помогают командам масштабироваться.
-          </p>
-        </div>
-        <div class="about-grid">
-          <div class="about-card">
-            <h3>Подход</h3>
-            <p>
-              Строю продукт вместе с бизнесом, аналитикой и разработкой. Сначала
-              выявляю цели и ограничения, затем формирую карту решений.
-            </p>
+            <article class="project-card">
+              <div class="project-head">
+                <span class="badge">Россия · США · Германия</span>
+                <h3>Фриланс</h3>
+                <p>UX/UI, брендинг и айдентика для разных компаний.</p>
+              </div>
+              <div class="project-preview orange-gradient"></div>
+              <button class="arrow" aria-label="Открыть">↗</button>
+            </article>
           </div>
-          <div class="about-card">
-            <h3>Жизнь вне работы</h3>
-            <p>
-              Семья, теннис, йога и формула 1. Баланс помогает держать фокус и
-              не выгорать.
-            </p>
-          </div>
-          <div class="about-card">
-            <h3>Менторинг</h3>
-            <p>
-              Помогаю дизайнерам расти, задавая сильные вопросы и поддерживая в
-              ключевые моменты пути.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section id="reviews" class="section reviews">
-        <div class="section-head">
-          <h2>Отзывы коллег</h2>
-          <p>Короткие заметки от людей, с которыми мы запускали продукты.</p>
-        </div>
-        <div class="review-grid">
-          <article>
-            <p>
-              “Всегда держит в фокусе клиента и не боится действовать. Один из
-              самых инициативных участников команды.”
-            </p>
-            <span>Настя К · Scrum master</span>
-          </article>
-          <article>
-            <p>
-              “С Никитой легко работать: вопросы решаются быстро, а макеты всегда
-              структурированы и продуманы.”
-            </p>
-            <span>Саша Н · Руководитель дизайн‑системы</span>
-          </article>
-          <article>
-            <p>
-              “Отличный баланс креатива и прагматики. Никита привносит в продукт
-              свежий взгляд и не теряет фокус на бизнесе.”
-            </p>
-            <span>Саша Д · Ведущий продуктовый дизайнер</span>
-          </article>
-        </div>
-      </section>
-
-      <section id="contact" class="section contact">
-        <div class="contact-card">
-          <h2>Давайте знакомиться</h2>
-          <p>Идеи, сотрудничество или менторство начинаются с простого «привет».</p>
-          <div class="contact-actions">
-            <a class="btn primary" href="mailto:hello@samulenkov.com">hello@samulenkov.com</a>
-            <a class="btn outline" href="https://t.me/" target="_blank" rel="noreferrer">Telegram</a>
-            <a class="btn outline" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <p>© 2026 Сделано с любовью к продуктам.</p>
-    </footer>
+        </section>
+      </main>
+    </div>
   </body>
 </html>

@@ -57,25 +57,37 @@ a {
 
 .hero-avatar {
   position: relative;
+
   width: 120px;
   height: 120px;
-  isolation: isolate;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-avatar::before {
   content: "";
+
   position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -35%);
-  width: 180px;
-  height: 180px;
+
+  width: 220px;
+  height: 220px;
+
   background: #07E6FA;
+
   border-radius: 50%;
-  filter: blur(60px);
-  opacity: 0.22;
-  z-index: -1;
-  pointer-events: none;
+
+  filter: blur(70px);
+
+  opacity: 0.28;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  z-index: 0;
 }
 
 .avatar {
@@ -91,6 +103,9 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  
+  position: relative;
+z-index: 2;
 }
 
 .avatar img {
@@ -104,6 +119,7 @@ a {
   position: absolute;
   bottom: -12px;
   left: 50%;
+  z-index: 3;
 
   transform: translateX(-50%);
 

@@ -49,16 +49,98 @@ a {
 }
 
 .hero {
+
   position: relative;
 
   text-align: center;
+
   display: grid;
+
   gap: 18px;
+
   justify-items: center;
 
   overflow: visible;
+
+  isolation: isolate;
+
 }
 
+/* MAIN ATMOSPHERIC GLOW */
+
+.hero::before {
+
+  content: "";
+
+  position: absolute;
+
+  left: 50%;
+
+  top: -340px;
+
+  transform: translateX(-50%);
+
+  width: 1600px;
+
+  height: 1000px;
+
+  background: radial-gradient(
+
+    circle,
+
+    rgba(7, 230, 250, 0.38) 0%,
+
+    rgba(7, 230, 250, 0.22) 22%,
+
+    rgba(7, 230, 250, 0.12) 40%,
+
+    rgba(7, 230, 250, 0.05) 56%,
+
+    rgba(7, 230, 250, 0) 74%
+
+  );
+
+  filter: blur(120px);
+
+  opacity: 0.9;
+
+  z-index: -2;
+
+  pointer-events: none;
+
+}
+
+/* INNER SOFT GLOW */
+
+.hero::after {
+
+  content: "";
+
+  position: absolute;
+
+  left: 50%;
+
+  top: -120px;
+
+  transform: translateX(-50%);
+
+  width: 900px;
+
+  height: 520px;
+
+  background: rgba(7, 230, 250, 0.22);
+
+  border-radius: 50%;
+
+  filter: blur(140px);
+
+  opacity: 0.9;
+
+  z-index: -1;
+
+  pointer-events: none;
+
+}
 .hero-avatar {
   position: relative;
 
@@ -70,65 +152,7 @@ a {
   justify-content: center;
 }
 
-.hero::before {
 
-  content: "";
-
-  position: absolute;
-
-  top: -220px;
-
-  left: 50%;
-
-  transform: translateX(-50%);
-
-  width: 1200px;
-
-  height: 700px;
-
-  background: radial-gradient(
-
-    circle,
-
-    rgba(7, 230, 250, 0.32) 0%,
-
-    rgba(7, 230, 250, 0.18) 25%,
-
-    rgba(7, 230, 250, 0.08) 45%,
-
-    rgba(7, 230, 250, 0) 72%
-
-  );
-
-  filter: blur(90px);
-
-  z-index: -1;
-
-  pointer-events: none;
-
-}
-
-.hero::after {
-  content: "";
-
-  position: absolute;
-
-  top: -120px;
-  left: 50%;
-
-  transform: translateX(-50%);
-
-  width: 700px;
-  height: 400px;
-
-  background: rgba(7, 230, 250, 0.18);
-
-  filter: blur(120px);
-
-  border-radius: 50%;
-
-  z-index: -1;
-}
 
 .avatar {
   width: 100%;

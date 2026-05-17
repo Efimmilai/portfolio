@@ -59,6 +59,23 @@ a {
   position: relative;
   width: 120px;
   height: 120px;
+  isolation: isolate;
+}
+
+.hero-avatar::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -35%);
+  width: 180px;
+  height: 180px;
+  background: #07E6FA;
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: 0.22;
+  z-index: -1;
+  pointer-events: none;
 }
 
 .avatar {

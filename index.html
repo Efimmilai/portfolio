@@ -1,81 +1,124 @@
 <!doctype html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Милай Ефим</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-<div class="bg-grid" aria-hidden="true"></div>
-    <div class="page">
-      <header class="hero">
-        <div class="hero-avatar">
-        <div class="avatar">
-    <img src="avatar.jpeg" alt="Avatar">
-        </div>
-          <div class="avatar-tags">
-            <span class="tag round">UX/UI</span>
-            <span class="tag round">Security</span>
-          </div>     
-        </div> 
-        
-        <p class="hero-eyebrow">Привет, я Ефим!</p>
-        <p class="hero-lead">
-          Я - инженер в отделе Кибербезопасности Сбера. Ищу возможность развиваться в дизайне и делаю различные кейсы в рамках дополнительных целей отдела.
-        </p>
-        <div class="hero-actions">
-          <a class="pill" href="https://tomsk.hh.ru/resume/dd67f708ff086586f70039ed1f33354d663461?print=true">CV ↗</a>
-          <a class="pill" href="https://t.me/efim_milai" target="_blank" rel="noreferrer">Telegram ↗</a>
-          <a class="pill" href="https://www.linkedin.com/in/efim-milai-9845a611b/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
-        </div>
-      </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ефим Милай</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-      
-      <main>
-        <section id="projects" class="section">
-          <h2>Мои проекты</h2>
-          <div class="project-grid">
-            <article class="project-card featured">
-              <div class="project-head">
-                <span class="badge">Россия</span>
-                <h3>СБЕР</h3>
-                <p>Модуль агрегации нарушителей. Учет и расследование нарушений кибербезопасности</p>
-              </div>
-              <div class="project-preview card-gradient"></div>
-              <button class="arrow" aria-label="Открыть">↗</button>
-            </article>
+  <link rel="stylesheet" href="styles.css" />
+</head>
 
-            <article class="project-card">
-              <div class="project-head">
-                <span class="badge">США · Казахстан</span>
-                <h3>Стартап SmplDo</h3>
-                <p>MVP приложения для автоматизации задач.</p>
-              </div>
-              <div class="project-preview dark-gradient"></div>
-              <button class="arrow" aria-label="Открыть">↗</button>
-            </article>
+<body>
 
-            <article class="project-card">
-              <div class="project-head">
-                <span class="badge">Россия · США · Германия</span>
-                <h3>Фриланс</h3>
-                <p>UX/UI, брендинг и айдентика для разных компаний.</p>
-              </div>
-              <div class="project-preview orange-gradient"></div>
-              <button class="arrow" aria-label="Открыть">↗</button>
-            </article>
-          </div>
-        </section>
-      </main>
+<div class="bg-grid"></div>
+
+<div class="page">
+
+  <header class="hero">
+
+    <div class="hero-avatar">
+      <div class="avatar">
+        <img src="avatar.jpg" alt="Avatar">
+      </div>
+
+      <div class="avatar-tags">
+        <span class="tag round">UX/UI</span>
+        <span class="tag round">Security</span>
+      </div>
     </div>
-  </body>
+
+    <p class="hero-eyebrow">Привет, я Ефим!</p>
+
+    <p class="hero-lead">
+      Я — инженер в отделе Кибербезопасности Сбера.
+      Ищу возможность развиваться в дизайне и делаю различные кейсы
+      в рамках дополнительных целей отдела.
+    </p>
+
+    <div class="hero-actions">
+      <a class="pill" href="#">CV ↗</a>
+      <a class="pill" href="#">Telegram ↗</a>
+      <a class="pill" href="#">LinkedIn ↗</a>
+    </div>
+
+  </header>
+
+  <main>
+
+    <section class="section">
+
+      <h2>Мои проекты</h2>
+
+      <div class="project-grid">
+
+        <article class="project-card featured">
+
+          <div class="project-head">
+            <span class="badge">Россия</span>
+
+            <h3>СБЕР</h3>
+
+            <p>
+              Модуль агрегации нарушителей.
+              Учет и расследование нарушений кибербезопасности.
+            </p>
+          </div>
+
+          <div class="project-preview card-gradient"></div>
+
+          <button class="arrow open-modal" data-modal="sber-modal">
+            ↗
+          </button>
+
+        </article>
+
+      </div>
+
+    </section>
+
+  </main>
+
+</div>
+
+<div class="modal" id="sber-modal">
+
+  <div class="modal-overlay"></div>
+
+  <div class="modal-content">
+
+    <button class="modal-close">×</button>
+
+    <span class="modal-badge">СБЕР · Кибербезопасность</span>
+
+    <h2>Модуль агрегации нарушителей</h2>
+
+    <p>
+      Концепция внутреннего модуля для централизованного учета,
+      расследования и аналитики нарушений информационной безопасности.
+    </p>
+
+    <div class="modal-section">
+
+      <h3>Основная идея</h3>
+
+      <p>
+        Создать единый интерфейс для работы с инцидентами,
+        расследованиями и профилями нарушителей с акцентом
+        на UX, скорость работы аналитиков и визуальную структуру данных.
+      </p>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
 </html>

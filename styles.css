@@ -182,7 +182,7 @@ a {
 
   border-radius: 999px;
 
-  background: #6d5dff;
+  background: #139BAA;
 
   display: flex;
   align-items: center;
@@ -193,7 +193,7 @@ a {
 
   color: #fff;
 
-  border: 2px solid var(--bg);
+  /* border: 2px solid var(--bg); */
 
   white-space: nowrap;
 }
